@@ -1,0 +1,86 @@
+@import "_grids.scss";
+@import "susy";
+
+$susy:(
+    columns: 20, // número de colunas do grid
+    container: 1140px, // largura do container
+    debug: (image: show), // exibe as colunas do grid
+);
+
+header {
+  height: 100px;
+  background: blue;
+  color: white;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.wrapper {
+  background: white;
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+nav {
+  text-align: center;
+  ul, li {
+    padding: 0;
+  }
+  li {
+    background: gray;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+    &:hover {
+      color: yellow;
+    }
+  }
+}
+
+.first-row {
+  height: 100px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.first-row .first{
+  background: yellow;
+  height: 100%;
+}
+
+.first-row .second{
+  height: 100%;
+}
+
+.first-row .second div{
+  background: orange;
+  height: 100%;
+}
+
+.pic-gallery {
+  div {
+    background: violet;
+    height: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+}
+
+.content-bar {
+  div {
+    background: green;
+    height: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+}
+
+footer {
+  height: 100px;
+  background: blue;
+  color: white;
+  margin-top: 10px;
+  padding: 10px;
+  clear: both;
+}
